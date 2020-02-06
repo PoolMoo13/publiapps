@@ -33,3 +33,25 @@ body {
 }
 
 /* // ESTILOS HOME */
+
+/* ESTILOS CLIENTES*/
+
+#clientes .clientes-titulo {
+    text-transform: uppercase;
+    color: #542f8c;
+    font-size: 1.5em;
+}
+#clientes .clientes-titulo span{
+    font-weight: 700;
+}
+#clientes .clientes-titulo .clientes-titulo-mas_grande {
+    font-size: 2em;
+}
+#clientes img {
+    width: 100px;
+    opacity: 0.5;
+}
+#clientes img:hover {
+    opacity: 1;
+}
+/* // ESTILOS CLIENTES*/
