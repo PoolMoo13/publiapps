@@ -1,0 +1,35 @@
+/*ESTILOS GENERALES*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* // ESTILOS GENERALES*/
+
+/* ESTILOS HOME */
+
+#home .home-texto_principal {
+    font-size: 1.5em;
+}
+#home .home-texto_secundario {
+    font-size: 1.3em;
+    color: #542f8c;
+}
+#home .home-texto_principal h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 2.5em;
+}
+#home .home-texto_principal p, #home .home-texto_secundario p {
+    text-transform: uppercase;
+    line-height: 1;
+}
+#home .home-texto_principal p span, #home .home-texto_secundario p span {
+    font-weight: 700;
+}
+#home .home-texto_secundario .home-texto_secundario-pequeño {
+    font-size: 0.6em;
+}
+
+/* // ESTILOS HOME */
