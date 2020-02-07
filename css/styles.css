@@ -93,3 +93,113 @@ body {
     transform: translateY(-50%);
 }
 /* // ESTILOS APPS PARA TODOS */
+
+
+
+
+/* ESTILOS CONTACTO*/
+#contacto {
+    margin-top: 2em;
+    background:#a33bd8;
+}
+
+
+
+#contacto .contacto-titulo_primera_linea {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+
+#contacto .contacto-subtitulo{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;   
+}
+
+#contacto .contacto-icono_telefono {
+    height: 2em;
+    margin-right: 1em;
+}
+
+#contacto .contacto-icono_correo {
+    height: 2em;
+    margin-right: 1em;
+    
+}
+
+#contacto .contacto-info_telefono {
+    margin-bottom: 0.5em;
+    width: 20em;
+    margin-top: 3.5em;
+}
+
+#contacto .contacto-info_correo {
+    width: 20em;
+}
+
+
+#contacto .contacto-telefono {
+    color: white;
+    
+}
+
+
+#contacto .contacto-correo {
+    color: white;
+}
+
+#contacto .contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#contacto .contact-form {
+    margin-top: 5em;
+}
+
+#contacto .contacto-form_input{
+    width: 20rem;
+    margin-left: 3rem;
+    resize: none;
+}
+
+#contacto .contacto-form_row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+
+}
+
+
+#contacto .contacto-form_label {
+    font-size: 0.8em;
+    color: white;
+    width: 4em;
+    display: flex;
+    margin-top:0.5em;
+    text-align: center;
+}
+
+#contacto .contacto-boton_de_envio {
+    font-size: 0.7em;
+    border-radius: 7px;
+    border: none;
+    left: 1px;
+    background-color: #6a2099;
+    color: white;
+    float: right;
+}
+
+#contacto .contacto-boton-row{
+    display: flex;
+    width: 77%;
+    justify-content: flex-end;
+}
