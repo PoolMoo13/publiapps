@@ -55,3 +55,41 @@ body {
     opacity: 1;
 }
 /* // ESTILOS CLIENTES*/
+
+/* ESTILOS APPS PARA TODOS */
+
+#apps_para_todos .apps_para_todos-titulo_principal {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#apps_para_todos .apps_para_todos-titulo_principal .primer_titulo {
+    font-size: 2.5em;
+}
+#apps_para_todos .apps_para_todos-titulo_principal .segundo_titulo {
+    font-size: 1.5em;
+}
+#apps_para_todos .apps_para_todos-imagen, #apps_para_todos .apps_para_todos-texto {
+    width: 50%;
+    float: left;
+    margin: 10px auto;
+}
+#apps_para_todos .apps_para_todos-texto h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+#apps_para_todos .apps_para_todos-texto .apps_para_todos-icono {
+    text-align: right;
+    position: relative;
+}
+#apps_para_todos .apps_para_todos-texto .apps_para_todos-icono:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1px solid #542f8c;
+    background: #542f8c;
+    width: calc(100% - 50px);
+    transform: translateY(-50%);
+}
+/* // ESTILOS APPS PARA TODOS */
