@@ -70,16 +70,14 @@ body {
 }
 /* // ESTILOS HOME */
 
-
 /* ESTILOS BENEFICIOS*/
-
 #beneficios {
     background-image: url('../img/fondo-beneficios.png'), url('../img/beneficios-fondo.png');
     background-position: top left, 100% 20% ;
     background-repeat: no-repeat, no-repeat;
     /* background-size: 40%, 50%; */
     background-size: 50%, 50%;
-    height: 1800px;
+    min-height: 1800px;
     padding-top: 300px;
 }
 #beneficios .beneficios-titulo_principal {
@@ -169,9 +167,6 @@ body {
 }
 /* // ESTILOS APPS PARA TODOS */
 
-
-
-
 /* ESTILOS CONTACTO*/
 #contacto {
     /* padding-top: 150px; */
@@ -179,9 +174,6 @@ body {
     background-image: url('../img/fondo-footer.png');
     min-height: 1000px;
 }
-
-
-
 #contacto .contacto-titulo_primera_linea {
     font-weight: bold;
     font-size: 2.5em;
@@ -191,45 +183,35 @@ body {
     margin-bottom: 0;
 
 }
-
 #contacto .contacto-subtitulo{
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;   
 }
-
 #contacto .contacto-icono_telefono {
     height: 2em;
     margin-right: 1em;
 }
-
 #contacto .contacto-icono_correo {
     height: 2em;
     margin-right: 1em;
     
 }
-
 #contacto .contacto-info_telefono {
     margin-bottom: 0.5em;
     width: 20em;
     margin-top: 3.5em;
 }
-
 #contacto .contacto-info_correo {
     width: 20em;
 }
-
-
 #contacto .contacto-telefono {
     color: white;
     
 }
-
-
 #contacto .contacto-correo {
     color: white;
 }
-
 #contacto .contacto-info {
     display: flex;
     flex-direction: column;
@@ -237,25 +219,20 @@ body {
     justify-content: center;
     margin-top: 5em;
 }
-
 #contacto .contact-form {
     margin-top: 5em;
 }
-
 #contacto .contacto-form_input{
     width: 20rem;
     margin-left: 3rem;
     resize: none;
 }
-
 #contacto .contacto-form_row {
     display: flex;
     flex-direction: row;
     margin-bottom: 1em;
 
 }
-
-
 #contacto .contacto-form_label {
     font-size: 0.8em;
     color: white;
@@ -264,7 +241,6 @@ body {
     margin-top:0.5em;
     text-align: center;
 }
-
 #contacto .contacto-boton_de_envio {
     font-size: 0.7em;
     border-radius: 7px;
@@ -274,9 +250,65 @@ body {
     color: white;
     float: right;
 }
-
-#contacto .contacto-boton-row{
+#contacto .contacto-boton-row {
     display: flex;
     width: 77%;
     justify-content: flex-end;
 }
+
+/*ESTILOS RESPONSIVOS*/
+@media (max-width: 991.98px) {
+    #beneficios, #apps_para_todos, #contacto {
+        background: none;
+    }
+    body {
+        background: #f2befc;
+    }
+    .navbar .navbar-collapse {
+        background: #f2befc;
+        z-index: 10;
+    }
+    .navbar .nav-item .nav-link {
+        color: #000;
+    }
+    #beneficios {
+        margin-top: 30px;
+        padding-top: 0;
+    }
+    #beneficios .beneficios-row_titulo {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #beneficios .beneficios-titulo_principal {
+        color: #000;
+    }
+    #beneficios .beneficios-imagen, #beneficios .beneficios-texto {
+        height: auto;
+    }
+    #beneficios .beneficios-imagen img {
+        height: 130px;
+    }
+    #apps_para_todos {
+        padding-top: 0;
+        color: #000;
+    }
+    #apps_para_todos .apps_para_todos-imagen, #apps_para_todos .apps_para_todos-texto {
+        width: 100%;
+    }
+    #clientes {
+        margin-top: 30px;
+    }
+    #contacto {
+        padding-top: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #beneficios {
+        background-image: url('../img/beneficios-fondo.png');
+        background-position: top right ;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        min-height: 1800px;
+        padding-top: 0;
+    }
+ }
