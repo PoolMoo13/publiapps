@@ -1,9 +1,42 @@
 /*ESTILOS GENERALES*/
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/fondo-header.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* background-size: 60%; */
+    background-size: 70%;
 }
-
+.navbar {
+    height: 150px;
+}
+.navbar .navbar-brand img {
+    height: 100px;
+}
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+.navbar .navbar-boton_fb img{
+    height: 30px;
+}
+.navbar .navbar-boton_iniciar-sesion a {
+    border: solid 1px #fff;
+}
+.link_to_top {
+    padding: 15px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f2befc;
+    border: solid 1px #772da5;
+}
+.link_to_top:hover {
+    background-color: #fff;
+    border: solid 1px #000;
+}
 /* // ESTILOS GENERALES*/
 
 /* ESTILOS HOME */
@@ -32,10 +65,44 @@ body {
     font-size: 0.6em;
 }
 
+#home .home-apps img {
+    width: 100%
+}
 /* // ESTILOS HOME */
 
-/* ESTILOS CLIENTES*/
 
+/* ESTILOS BENEFICIOS*/
+
+#beneficios {
+    background-image: url('../img/fondo-beneficios.png'), url('../img/beneficios-fondo.png');
+    background-position: top left, 100% 20% ;
+    background-repeat: no-repeat, no-repeat;
+    /* background-size: 40%, 50%; */
+    background-size: 50%, 50%;
+    height: 1800px;
+    padding-top: 300px;
+}
+#beneficios .beneficios-titulo_principal {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+}
+#beneficios .beneficios-titulo_principal-mas_grande {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+#beneficios .beneficios-imagen img{
+    height: 80%;
+}
+#beneficios .beneficios-imagen, #beneficios .beneficios-texto {
+    height: 50%;
+}
+/* // ESTILOS BENEFICIOS*/
+
+/* ESTILOS CLIENTES*/
+#clientes {
+    margin-top: -60px;
+}
 #clientes .clientes-titulo {
     text-transform: uppercase;
     color: #542f8c;
@@ -58,6 +125,14 @@ body {
 
 /* ESTILOS APPS PARA TODOS */
 
+#apps_para_todos {
+    background-image: url('../img/fondo-expertos.png');
+    background-size: cover;
+    /* padding-top: 100px; */
+    padding-top: 155px;
+    min-height: 1900px;
+    color: #fff;
+}
 #apps_para_todos .apps_para_todos-titulo_principal {
     text-transform: uppercase;
     font-weight: 700;
@@ -99,8 +174,10 @@ body {
 
 /* ESTILOS CONTACTO*/
 #contacto {
-    margin-top: 2em;
-    background:#a33bd8;
+    /* padding-top: 150px; */
+    padding-top: 160px;
+    background-image: url('../img/fondo-footer.png');
+    min-height: 1000px;
 }
 
 

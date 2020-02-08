@@ -20,9 +20,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse text-right" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#beneficios">Beneficios</a>
             </li>
             <li class="nav-item">
@@ -34,10 +34,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navbar-boton_fb">
               <a href="#" class="nav-link">
                 <img src="img/icono-fb.png" alt="">
               </a>
+            </li>
+            <li class="nav-item navbar-boton_iniciar-sesion">
+              <a href="#" class="nav-link">Iniciar sesión</a>
             </li>
           </ul>
         </div>
@@ -45,10 +48,10 @@
     </nav>
   
     <!-- SECTION HOME -->
-    <div id="home" class="mt-5">
+    <div id="home">
       <div class="container">
         <div class="row">
-          <div class="col my-3">
+          <div class="col-md-4 my-3">
             <div class="home-texto_principal text-center my-5">
               <h1 class="mb-0">App</h1>
               <p> <span>personalizada</span> <br>para negocios</p>
@@ -59,7 +62,7 @@
               </p>
             </div>
           </div>
-          <div class="col text-center my-3">
+          <!-- <div class="col text-center my-3">
             <img src="img/app-1.png" alt="">
           </div>
           <div class="col text-center my-3">
@@ -67,43 +70,94 @@
           </div>
           <div class="col text-center my-3">
             <img src="img/app-3.png" alt="">
-          </div>
+          </div> -->
+        <div class="col-md-8 home-apps">
+          <img src="img/app-todas.png" alt="">
+        </div>
         </div>
       </div>
     </div>
     <!-- //SECTION HOME -->
 
     <!-- SECTION BENEFICIOS -->
-    <div id="beneficios" class="my-5">
+    <div id="beneficios">
       <div class="container">
-        <div class="row justify-content-start">
-          <div class="col-4">
-            Col 1
-          </div>
-          <div class="col-4">
-            Col 1
-          </div>
-        </div>
-        <div class="row justify-content-start">
-          <div class="col-4">
-            Col 1
-          </div>
-          <div class="col-4">
-            Col 1
-          </div>
-          <div class="col-4">
-            Col 1
+        <div class="row text-center mb-5 pb-5">
+          <div class="col-md-4 beneficios-titulo_principal">
+            <p>
+              <span class="beneficios-titulo_principal-mas_grande">Beneficios</span><br>
+              de tener una app
+            </p>
           </div>
         </div>
         <div class="row justify-content-start">
-          <div class="col-4">
-            Col 1
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-1.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">PLATAFORMA ÚNICA Y OFICIAL para centralizar todas las iniciativas, actividades y camapañas internas de tu organización permitiendo la interacción EN TIEMPO REAL de toda tu comunidad.</p>
+            </div>
           </div>
-          <div class="col-4">
-            Col 1
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-2.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">Acceso 24/7</p>
+            </div>
           </div>
-          <div class="col-4">
-            Col 1
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-3.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">Administrar y generar CONTENIDOS Y NOVEDADES EN TODO MOMENTO y lugar: noticias, eventos, comunicados, encuestas, reportes y promociones incorporando también cumpleaños y reconocimientos.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-4.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">ESPACIOS DE INTERACCIÓN DIRECTA entre los miembros de tu comunidad para generar lazos y compartir conocimiento.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-5.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">¡EL MEDIO MÁS RÁPIDO! <br> Envía notificaciones push instantáneas y georeferenciadas con tus mensajes y recordatorios de último momento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-6.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">Descubre el impacto de todas tus iniciativas de comunicación con REPORTES CON ESTADÍSTICAS DE ACTIVIDAD en tiempo real.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-7.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">ELABORA Y CONTROLA LOS MENSAJES MÁS EFICACES, segmentados por interés, zonas geográficas o grupo.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="beneficios-imagen">
+              <img class="my-3" src="img/beneficio-8.png" alt="">
+            </div>
+            <div class="beneficios-texto">
+              <p class="my-4">Haz de la app de  TU CANAL PARA RECONOCER EN PÚBLICO a tus colaboradores o usuarios destacados en tu comunidad.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -332,8 +386,10 @@
       </div>
     </div>
     <!-- SECTION CLIENTES -->
+
+    <!-- SECTION CONTACTO -->
     <div id="contacto">
-      <div class="container">
+      <div class="container py-5">
         <div class="row">
           <div class="col text-center">
             
@@ -391,8 +447,13 @@
 
 
     </div>
+    <!-- // SECTION CONTACTO -->
 
-    
+    <!-- LINK TOP -->
+    <a class="link_to_top" href="#">
+      <img src="img/arrow-up.svg" alt="">
+    </a>
+    <!-- // LINK TOP -->
     <!-- Scripts Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
