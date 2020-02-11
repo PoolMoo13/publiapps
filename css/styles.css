@@ -274,7 +274,7 @@ body {
         background: none;
     }
     body {
-        background: url(../img/fondo-mobile.png);
+        background: #f2befc;
     }
     .navbar .navbar-collapse {
         background: #f2befc;

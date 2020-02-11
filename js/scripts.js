@@ -17,9 +17,21 @@ $( document ).ready(function() {
         })
         .then(res => {
             console.log(res);
+            Swal.fire({
+                title: '¡Enviadro!',
+                text: 'Tu mensaje ha sido enviado correctamente',
+                icon: 'succes',
+                confirmButtonText: 'Aceptar'
+              })
         })
         .catch(err => {
             console.log(err);
+            Swal.fire({
+                title: '¡Error!',
+                text: 'Ha ocurrido un error. Intente más tarde.',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+              })
         })
     })
 });
