@@ -7,6 +7,8 @@
     <!-- Styles Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+    rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>PubliApps</title>
 </head>
@@ -389,7 +391,7 @@
 
     <!-- SECTION CONTACTO -->
     <div id="contacto">
-      <div class="container py-5">
+      <div class="container pt-5">
         <div class="row">
           <div class="col text-center">
             
@@ -415,27 +417,26 @@
             
           </div>
           <div class="col">
-            <form class="contact-form">
+            <form id="formulario_contacto" class="contact-form">
 
               <div class="contacto-form_row">
                 <p class="contacto-form_label">Nombre</p>
-                <input class="contacto-form_input" />
+                <input name="nombre" data-validation="required" id="formulario_contacto-nombre" class="contacto-form_input">
               </div>
 
               <div class="contacto-form_row">
                 <p class="contacto-form_label"> Email</p>
-                <input class="contacto-form_input" />
+                <input name="correo" data-validation="email" id="formulario_contacto-correo" class="contacto-form_input">
               </div>
 
               <div class="contacto-form_row">
                 <p class="contacto-form_label">Dejanos tu mensaje</p>
-                <textarea  class="contacto-form_input">  </textarea >
+                <textarea name="mensaje" data-validation="required" id="formulario_contacto-mensaje" class="contacto-form_input"></textarea >
               </div>
-
 
               <div class="contacto-form_row">
                 <div class="contacto-boton-row" >
-                  <button class="contacto-boton_de_envio">Enviar</button>
+                  <button id="formulario_contacto-boton" class="contacto-boton_de_envio">Enviar</button>
                 </div>
               </div>
               
@@ -444,8 +445,23 @@
         </div>
 
       </div>
-
-
+      <div class="container footer">
+        <div class="row text-center my-4">
+          <div class="col logo-publiapps">
+            <img class="logo-blanco" src="img/logo-blanco.png" alt="PubliApps">
+          </div>
+        </div>
+        <div class="row text-center my-4">
+          <div class="col logo-psi">
+            <p>By <img src="img/logo-psi.png" alt=""></p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col footer-text">
+            <p>PUBLIAPPS | &copy; Copyright 2020 | PUBLISISTEMAS GROUP | Políticas de Privacidad</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- // SECTION CONTACTO -->
 
@@ -458,5 +474,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

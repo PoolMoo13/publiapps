@@ -183,7 +183,7 @@ body {
     margin-bottom: 0;
 
 }
-#contacto .contacto-subtitulo{
+#contacto .contacto-subtitulo {
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;   
@@ -234,7 +234,7 @@ body {
 
 }
 #contacto .contacto-form_label {
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     color: white;
     width: 4em;
     display: flex;
@@ -242,7 +242,7 @@ body {
     text-align: center;
 }
 #contacto .contacto-boton_de_envio {
-    font-size: 0.7em;
+    font-size: 1em;
     border-radius: 7px;
     border: none;
     left: 1px;
@@ -255,14 +255,26 @@ body {
     width: 77%;
     justify-content: flex-end;
 }
-
+#contacto .footer img.logo-blanco {
+    width: 150px;
+}
+#contacto .footer .logo-psi {
+    color: #fff
+}
+#contacto .footer .logo-psi img {
+    width: 50px
+}
+#contacto .footer .footer-text {
+    color: #fff;
+    font-size: 0.8em;
+}
 /*ESTILOS RESPONSIVOS*/
 @media (max-width: 991.98px) {
     #beneficios, #apps_para_todos, #contacto {
         background: none;
     }
     body {
-        background: #f2befc;
+        background: url(../img/fondo-mobile.png);
     }
     .navbar .navbar-collapse {
         background: #f2befc;
@@ -298,8 +310,36 @@ body {
     #clientes {
         margin-top: 30px;
     }
+    #clientes img {
+        opacity: 1;
+    }
     #contacto {
-        padding-top: 0;
+        padding-top: 30px;
+    }
+    #contacto .contacto-info, #contacto .contacto-info_telefono {
+        margin-top: 0
+    }
+    #contacto .contact-form {
+        margin-top: 3em;
+    }
+    #contacto .contacto-boton-row {
+        width: 100%
+    }
+    #contacto .contacto-titulo_primera_linea, #contacto .contacto-subtitulo, #contacto .contacto-telefono, #contacto .contacto-correo, #contacto .contacto-form_label {
+        color: #000;
+    }
+    #contacto .contacto-icono_telefono, #contacto .contacto-icono_correo {
+        height: 40px;
+        filter: invert(1);
+    }
+    #contacto .contacto-boton_de_envio {
+        font-size: 1em;
+    }
+    #contacto .footer .logo-psi, #contacto .footer .footer-text {
+        color: #000;
+    }
+    #contacto .footer .logo-psi img, #contacto .footer .logo-publiapps img {
+        filter: invert(1);
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) { 
