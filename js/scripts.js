@@ -18,9 +18,9 @@ $( document ).ready(function() {
         .then(res => {
             console.log(res);
             Swal.fire({
-                title: '¡Enviadro!',
+                title: '¡Enviado!',
                 text: 'Tu mensaje ha sido enviado correctamente',
-                icon: 'succes',
+                icon: 'success',
                 confirmButtonText: 'Aceptar'
               })
         })
