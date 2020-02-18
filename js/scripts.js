@@ -6,9 +6,11 @@ $( document ).ready(function() {
 
     $("#formulario_contacto").submit(e => {
         e.preventDefault()
+        $("#contacto #formulario_contacto").addClass("loader-active")
+        $("#contacto .loader").addClass("loader-active")
         const nombre = $("#formulario_contacto-nombre").val()
         const correo = $("#formulario_contacto-correo").val()
-        const mensaje = $("#formulario_contacto-mensaje").text()
+        const mensaje = $("#formulario_contacto-mensaje").val()
         console.log(nombre, correo, mensaje)
         axios.post('https://mefaltaweb.com/publiapps/sendMail.php', {
             nombre,
@@ -22,7 +24,10 @@ $( document ).ready(function() {
                 text: 'Tu mensaje ha sido enviado correctamente',
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
-              })
+            })
+            $("#contacto #formulario_contacto").removeClass("loader-active")
+            $("#contacto .loader").removeClass("loader-active")
+            $("#formulario_contacto").trigger("reset");
         })
         .catch(err => {
             console.log(err);
@@ -31,7 +36,9 @@ $( document ).ready(function() {
                 text: 'Ha ocurrido un error. Intente más tarde.',
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
-              })
+            })
+            $("#contacto #formulario_contacto").removeClass("loader-active")
+            $("#contacto .loader").removeClass("loader-active")
         })
     })
 });
